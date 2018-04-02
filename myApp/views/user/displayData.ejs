@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./../admin/admin.css">
+    
+    <title>Document</title>
+
+
+</head>
+<body>
+    <form action="" method="get">
+    <table>
+            <tr>
+                <th>Name</th>
+               <th>Password</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+            </tr>
+             
+            <% for(var i=0; i < user.length; i++) { %>
+                <tr>
+                  <td><%= user[i].username %></td>
+                  <td><%= user[i].password %></td>
+                  <td><%= user[i].firstname %></td>
+                  <td><%= user[i].lastname %></td>
+                  <td><%= user[i]._id %></td>
+                  <td><a href="">edit</a></td>
+                  <td><a href="/deleteOneUser/<%=user[i]._id%>">delete</a></td>  
+                  <!-- delete is not working -->
+                </tr>
+             <% } %>
+       </table>
+    </form>
+      
+        
+       
+
+</body>
+</html>

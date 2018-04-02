@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/admin.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/getDetails" method="post">
+        <h2><%= heading%></h2>
+        <table>
+            <tr>
+                <th> <h4>Ids</h4></th>
+            </tr>
+       
+            
+                    <% for(var i=0; i < names.length; i++) { %>
+                       
+                           <tr>
+                           <td>
+                           <input type="text" id="row_<%=i%>" name="row_<%=i%>" value="<%=names[i]%>">
+                            </td>
+                          </tr>
+                     <% } %>
+
+            </tr>
+        
+         
+        </table>
+        <input type="submit" value="View Details">
+    </form>
+</body>
+</html>

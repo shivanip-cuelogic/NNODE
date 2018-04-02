@@ -1,0 +1,82 @@
+body {font-family: Arial;
+    background-image: url("myimage.jpeg") ;
+    background-size:900px 1200px;
+    background-repeat: no-repeat;
+    background-position: center; 
+     }
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 60%;
+    /* margin-top:100px; */
+    margin:0 auto;
+
+    
+}
+p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+input[type='text']:focus{
+    outline: 2px solid blue;   
+  }
+ 
+  input[type='password']:focus{
+    outline: 2px solid blue;   
+  }  
+
+  /* input:invalid { outline: solid red 2px; } */
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color:#ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    /* margin-left:200px;  */
+    /* border: 1px solid #ccc; */
+    border-top: none;
+    width: 70%;
+    margin: 0 auto;
+    
+
+}
+
+.signinform{
+   
+    float: right;
+    margin-right: 40px;
+    padding:10px;
+  
+}
+
+.loginform{
+   
+    float: right;
+    margin-right: 40px;
+    padding:10px;
+    
+}
+

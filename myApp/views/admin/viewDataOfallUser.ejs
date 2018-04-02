@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/admin.css">
+    <title>Document</title>
+</head>
+<body>
+    
+       <form action="/" method="get">
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Password</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>ObjectId</th>
+            </tr>
+              <% for(var i=0; i < result.length; i++) { %>
+                 <tr id="row_<%=i%>">
+                   <td><%= result[i].username %></td>
+                   <td><%= result[i].password %></td>
+                   <td><%= result[i].firstname%></td>
+                   <td><%= result[i].lastname %></td>
+                   <td><%= result[i]._id %></td>
+                   <td><a href="/admin/editAll/<%=result[i]._id%>">Edit</a></td>
+                   <td><a href="/admin/deleteAll/<%=result[i]._id%>">Delete</a></td>
+                 </tr>
+              <% } %>
+       </table>
+
+       </form> 
+        
+
+</body>
+</html>
